@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="hXb-pT-HJh">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="hXb-pT-HJh">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23094"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,14 +37,14 @@
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ze0-VP-O8Y">
                                         <rect key="frame" x="361" y="48" width="178" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="OQj-1b-cpi"/>
-                                            <constraint firstAttribute="width" constant="178" id="Uyi-l9-JnV"/>
-                                        </constraints>
                                         <buttonCell key="cell" type="square" title="Grant" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="89Q-Nv-Yj0">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="OQj-1b-cpi"/>
+                                            <constraint firstAttribute="width" constant="178" id="Uyi-l9-JnV"/>
+                                        </constraints>
                                         <connections>
                                             <action selector="onGrantButtonClick:" target="ZxV-1y-QzT" id="cdI-Xk-UV9"/>
                                         </connections>
@@ -59,14 +59,14 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mAi-7h-bSj">
-                                        <rect key="frame" x="248" y="467" width="44" height="16"/>
+                                        <rect key="frame" x="248" y="466" width="44" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Step 2" id="ne5-dP-fE2">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjG-g8-arc">
+                                    <textField wantsLayer="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjG-g8-arc">
                                         <rect key="frame" x="18" y="411" width="199" height="32"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <textFieldCell key="cell" selectable="YES" title="Press button Grant" id="VIY-fV-Ovv">
@@ -75,7 +75,7 @@
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4MY-05-fgg">
+                                    <textField wantsLayer="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4MY-05-fgg">
                                         <rect key="frame" x="248" y="411" width="199" height="32"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <textFieldCell key="cell" selectable="YES" title="Unlock Access" id="7uy-Ww-wOs">
@@ -92,7 +92,7 @@
                                         </constraints>
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" imageScaling="proportionallyDown" image="step2" id="Dkr-Yo-qEM"/>
                                     </imageView>
-                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w0j-QB-oAq">
+                                    <textField wantsLayer="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w0j-QB-oAq">
                                         <rect key="frame" x="603" y="411" width="199" height="32"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <textFieldCell key="cell" selectable="YES" title="Set the checkbox on" id="cG2-Y1-S1T">
@@ -115,7 +115,7 @@
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" imageScaling="proportionallyDown" image="step3" id="mSR-Ko-G8B"/>
                                     </imageView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7dy-iP-Fvx">
-                                        <rect key="frame" x="264" y="533" width="372" height="24"/>
+                                        <rect key="frame" x="266" y="532" width="369" height="25"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Accessibility Control Access Request" id="Q0p-sQ-Bq3">
                                             <font key="font" metaFont="systemBold" size="21"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
